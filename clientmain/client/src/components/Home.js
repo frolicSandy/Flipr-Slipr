@@ -100,7 +100,7 @@ export default function Home() {
     setValue(k);
     setValue1(k);
     console.log(value, " hello");
-    const dd= await (await axios.get("http://localhost:5000/api/stocks/"+value)).data.index;
+    const dd= await (await axios.get("https://fliprslipr.onrender.com/api/stocks/"+value)).data.index;
     const dateclose=dd[dd.length-1].Open;
 
     setValue2((Math.round(dateclose*100))/100);
