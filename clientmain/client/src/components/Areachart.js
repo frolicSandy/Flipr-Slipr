@@ -22,7 +22,7 @@ class Areachart extends Component {
   }
   componentDidMount() {
     const datafetch = axios.get(
-      "http://localhost:5000/api/stocks/" + this.state.stock
+      "https://fliprslipr.onrender.com/api/stocks/" + this.state.stock
     );
     
     console.log(datafetch);

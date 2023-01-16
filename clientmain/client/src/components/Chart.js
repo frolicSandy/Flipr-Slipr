@@ -25,7 +25,7 @@ class Chart extends Component {
   }
 
   componentDidMount() {
-    const apilink = "http://localhost:5000/api/stocks/" + this.state.stock;
+    const apilink = "https://fliprslipr.onrender.com/api/stocks/" + this.state.stock;
     const datafetch = axios.get(apilink);
 
     datafetch
