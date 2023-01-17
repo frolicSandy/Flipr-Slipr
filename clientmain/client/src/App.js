@@ -1,20 +1,30 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Home from "./components/Home";
-import Sidenav from "./components/Sidenav";
-import Areachart from "./components/Areachart";
-import Chart from "./components/Chart";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import Login from "./components/Login";
+import SignUp from "./components/Signup";
 
 function App() {
   return (
     <>
       <BrowserRouter>
+      <div className="App">
+        <div className="auth-wrapper" style={{display: window.location.pathname.split("/").pop() === 'home' ? 'none': 'block' }}>
+          {/* {window.location.reload()} */}
+          <div className="auth-inner">
+            <Routes>
+              <Route exact path="/" element={<Login/>} />
+              <Route path="/signin" element={<Login />} />
+              <Route path="/signup" element={<SignUp/>} />
+            </Routes>
+          </div>
+        </div>
         <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="chart" element={<Chart />}></Route>
+          <Route path="/home" element={<Home />} />
         </Routes>
-      </BrowserRouter>
+      </div>
+    </BrowserRouter>
 
       {/* <Areachart/> */}
       {/* <Chart/> */}

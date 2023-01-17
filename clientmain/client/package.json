@@ -12,6 +12,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.2.2",
     "babel-plugin-macros": "^3.1.0",
+    "bootstrap": "^5.2.3",
     "canvasjs-react-charts": "^1.0.5",
     "fontawesome": "^5.6.3",
     "igniteui-react-charts": "18.1.2",
@@ -19,6 +20,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-dropdown": "^1.11.0",
+    "react-loading-screen": "^0.0.17",
     "react-router-dom": "^6.6.2",
     "react-scripts": "5.0.1",
     "routes": "^2.1.0",
@@ -27,7 +29,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "CI=false && react-scripts build",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
