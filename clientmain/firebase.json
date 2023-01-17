@@ -8,10 +8,10 @@
     ]
   },
   "redirects": [
-    {
-      "source" "public/index.html",
-      "destination": "<https://fastidious-torte-cc50dc.netlify.app",
-      "type": 302
-    }
-  ]
+      {
+        "source": "/",
+        "destination": "https://fastidious-torte-cc50dc.netlify.app/",
+        "type": 301
+      }
+    ]
 }
