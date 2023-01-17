@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "public": "clientmain/client/build",
+    "redirects": [
+      {
+        "source": "/",
+        "destination": "https://fastidious-torte-cc50dc.netlify.app/",
+        "type": 301
+      }
+    ],
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
