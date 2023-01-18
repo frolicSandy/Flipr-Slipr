@@ -11,6 +11,9 @@
   font-size: 1.1em;
   padding: 2px 2px;
 }
+.container1{
+    z-index: 2;
+}
 .cont1_drpdwn_content {
   position: absolute;
   display: none;

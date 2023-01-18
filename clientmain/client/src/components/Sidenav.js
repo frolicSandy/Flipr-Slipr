@@ -2,25 +2,27 @@ import React from "react";
 import "../assets/css/Sidenav.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
-// import {func} from "./Home"
+/**import {func} from "./Home"*/
 import { Link } from "react-router-dom";
 
 
 function showMenu() {
-  // console.log("Classs = " + `${styles1.back_menu}`);
-  var menu = document.getElementById("navcont");
-  console.log(menu);
+  /** console.log("Classs = " + `${styles1.back_menu}`);*/
+  const menu = document.getElementById("navcont");
+  /**console.log(menu);*/
   menu.style.visibility = "visible";
 }
 function closeMenu() {
-  var menu = document.getElementById("navcont");
-  console.log(menu);
+  const menu = document.getElementById("navcont");
+  /**console.log(menu);*/
   menu.style.visibility = "hidden";
 }
-// function func(params) {
-//   const k=params;
-
-// }
+/**
+ // function func(params) {
+   //   const k=params;
+   
+   // }
+*/
 function Sidenav({func}) {
   return (
     <div>
