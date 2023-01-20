@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import './Login.css';
 import axios from "axios";
 // import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import { Link, useHistory, useNavigate } from "react-router-dom";
@@ -46,7 +47,7 @@ export default function Login() {
         text="Logging You In"
       />
       <LoginNav />
-      <form onSubmit={handleSubmit}>
+      <form className="login-form" onSubmit={handleSubmit}>
         <h3>Sign In</h3>
 
         <div className="mb-3">
@@ -68,7 +69,7 @@ export default function Login() {
         </div>
 
         <div className="d-grid">
-          <button type="submit" className="btn btn-primary">
+          <button type="submit" className="btn btn-success">
             Submit
           </button>
         </div>
