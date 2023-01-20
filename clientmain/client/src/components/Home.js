@@ -93,7 +93,6 @@ export default function Home() {
   const [value, setValue] = useState("cipla");
   const [value1, setValue1] = useState("NIFTY 50");
   const [value2, setValue2] = useState("17,972.15");
-
   const temp = async (e, k) => {
     setLoadingState(true)
     e.preventDefault();
